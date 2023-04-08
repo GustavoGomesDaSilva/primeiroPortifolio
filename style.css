@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    background-color: #BDBDBD;
+}
+header {
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #0f0f47;
+    height: 10vh;
+    box-shadow: 0px 10px 1px black;
+}
+header h1{
+    color: #dadada;
+    font-size: 27px;
+}
+header #direitaTopo{
+    display: flex;
+    width: 50vw;
+}
+header #direitaTopo ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+header #direitaTopo ul a{
+    text-decoration: none;
+}
+header #direitaTopo ul li{
+    color: #dadada;
+    font-size: 15px;
+}
+header #direitaTopo ul li:hover, header #direitaTopo ul li:focus{
+    transform: scale(1.1);
+    transition: 0.6s;
+    color: #e6e6e6;
+}
+header #direitaTopo ul li:before {
+    content: '\2022';
+    margin: 0 2px;
+    color: #6A92FF /* cor da bolinha */
+}
+
+#topo{
+    width: 90%;
+    padding: 0% 5%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(assets/fundoTopo.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 65%;
+    border-bottom: #19254E 10px solid;
+}
+#topo #banners{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+#topo #banners #nome{
+     width: 70%;
+     margin-top: -15vh;
+     background-color: #3A4042;
+     padding: 5%;   
+     border-radius: 5px;
+     box-shadow:  black 4px 4px 1px;
+     text-align: center;
+}
+#topo #banners #nome:hover, #topo #banners #nome:focus{
+    box-shadow:  #6A92FF 4px 4px 1px;
+    transition: 1s;
+}
+#topo #banners #nome h2{
+    color: #6A92FF;
+    font-size: 35px;
+    text-shadow:  black 4px 4px 1px;
+    margin-bottom: 10px;
+}
+#topo #banners #nome h3{
+    color: #d4d4d4;
+    font-size: 20px;
+    text-shadow:  black 4px 4px 1px;
+    margin-top: 5px;
+}
+#topo #banners #btnsTopo{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.5vh;
+}
+#topo #banners #btnsTopo button{
+    width: 10vw;
+    height: 6vh;
+    border-radius: 3px;
+    background-color: #0f0f47;
+    box-shadow:  black 4px 4px 1px;
+    transition: background 0.6s;
+    color: #fff;
+}
+
+#topo #banners #btnsTopo button:hover,#topo #banners #btnsTopo button:focus {
+  background: #a3c8eb;
+  color: #0f0f47;
+  cursor: pointer;
+}
+#topo #gif{
+    width: 40%;
+    height: 70%;
+    margin-top: 5vh;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+} 
+#topo #gif img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow:  black 7px 9px 2px;
+}
+
+/* começo da estilização da parte das skills */
+
+#skills{
+    width: 90%;
+    padding: 0 5%;
+    background-color: #9AB4BC;
+    margin: 0;
+    padding-top: 4vh;
+    ;
+    /* display: flex; */
+    border-bottom: #19254E 10px solid;
+
+}
+#skills section{
+    display: flex;
+    justify-content: center;
+}
+#skills h2{
+    font-size: 35px;
+    color: #0f0f47;
+    text-shadow: #fff 2px 2px 2px;
+    text-align: center;
+    /* margin-top: 7vh; */
+}
+#skills #skilssEsquerda, #skills #skillsDireita{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgSkills{
+    width: 85%;
+    height: 14vh;
+    margin: 4vh auto;
+}
+
+/* começo da estilização da parte dos projetos */
+
+#projetos{
+    width: 90%;
+    padding: 5%;
+    padding-top: 3%;
+    height: auto;
+    background-color: #656A6C;
+    border-bottom: #19254E 10px solid;
+
+}
+#projetos h2{
+    font-size: 35px;
+    text-align: center;
+    color: #f1f1f1;
+}
+#projetos #logosProjetos{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#projetos #logosProjetos .cardBaixo{
+    height: 55vh;
+    display: flex;
+    align-items: flex-end;
+    /* background-color: #252525; */
+}
+#projetos #logosProjetos .cardBaixo div{
+    height: 35vh;
+    width: fit-content;
+    background-color: #bdbdbd;
+    /* padding-left: 3%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2%;
+    box-shadow: 8px 8px 1px #202324;
+
+}
+#projetos #logosProjetos .cardBaixo div img{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+#projetos #logosProjetos #cardCima{
+    height: 55vh;
+    display: flex;
+    align-items: Center;
+    margin-top: 3vh;
+    /* background-color: #252525; */
+}
+
+#projetos #logosProjetos #cardCima div{
+    height: 45vh;
+    width: 20vw;
+    background-color: #a3c8eb;
+    /* padding-left: 3%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2%;
+    box-shadow: 8px 8px 1px #202324;
+    animation: jump 1.5s ease-in-out infinite;
+
+    /* 9CC4E9 */
+}
+#projetos #logosProjetos #cardCima div img{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+/* começo estilização sobre mim */
+#sobre{
+    width: 100%;
+    /* padding: 5%; */
+    padding: 3% 0;
+    background-color: #374A6F;
+    border-bottom: #050505 10px solid;
+}
+#sobre h2{
+    font-size: 35px;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+#sobre div{
+    width: 100%;
+    height: auto;
+}
+#sobre div img{
+    width: 100%;
+    margin-bottom: 5vh;
+}
+#sobre p{
+    width: 90%;
+    margin: auto;
+    color: #e0e0e0;
+    line-height: 40px;
+    text-shadow: #313131 3px 3px 3px;
+    margin-bottom: 5vh;
+}
+footer{
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 17%, rgba(0,0,0,0.6604050196958392) 100%, rgba(0,0,0,1) 190%);    width: 90%;
+    padding: 3% 5%;
+    display: flex;
+    /* justify-content: space-around; */
+    color: #f1f1f1;
+}
+footer div a{
+    text-decoration: none;
+    color: #dadada;
+}
+footer article{
+    width: 90%;
+    
+}
+footer article h3{
+    text-align: center;
+}
+footer article div{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 4vh;
+}
+footer article div img{
+    width: 13vh;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+}
+@keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-7px);
+    }
+  }

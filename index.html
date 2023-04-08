@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- klinkando fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- klinkando fonte -->
+    <title>Portifólio Gustavo</title>
+  </head>
+  <body>
+    <main>
+      <a href="#Home" name="Home"></a>
+      <header>
+        <h1>Portifólio</h1>
+        <div id="direitaTopo">
+          <ul>
+            <a href="#Skills"><li>Skills</li></a>
+            <a href="#Projetos"><li>Projetos</li></a>
+            <a href="#Sobre"><li>Sobre</li></a>
+            <a href="#Contatos"><li>Contatos</li></a>
+          </ul>
+        </div>
+      </header>
+
+      <section id="topo">
+        <article id="banners">
+          <div id="nome">
+            <h2>Gustavo Gomes</h2>
+            <h3>FrontEnd Developer</h3>
+          </div>
+          <div id="btnsTopo">
+            <a href="assets/CurriculoGustavo.pdf" download=""><button>Currículo</button></a>
+            <a href="#Contatos"><button>Contatos</button></a>
+          </div>
+        </article>
+        <article id="gif">
+          <img src="assets/capibara.gif" alt="gif de uma capivara codando" />
+        </article>
+      </section>
+      <!-- começo skills -->
+      <a name="Skills"></a>
+      <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <section>
+          <article id="skilssEsquerda">
+            <img class="imgSkills" src="assets/html.png" alt="icone do html5" />
+            <img class="imgSkills" src="assets/css.png" alt="icone do css3" />
+            <img
+              class="imgSkills"
+              src="assets/jS.png"
+              alt="icone do javaScript"
+            />
+            <img
+              class="imgSkills"
+              src="assets/react.png"
+              alt="icone do react"
+            />
+          </article>
+          <article id="skillsDireita">
+            <img class="imgSkills" src="assets/node.png" alt="icone do html5" />
+            <img class="imgSkills" src="assets/java.png" alt="icone do css3" />
+            <img
+              class="imgSkills"
+              src="assets/figma.png"
+              alt="icone do javaScript"
+            />
+            <img
+              class="imgSkills"
+              src="assets/office.png"
+              alt="icone do react"
+            />
+          </article>
+        </section>
+      </section>
+      <a name="Projetos"></a>
+      <section id="projetos">
+        <h2>Principais Projetos</h2>
+        <article id="logosProjetos">
+          <a href="https://science-tech.netlify.app/" target="_blank">
+            <div class="cardBaixo">
+              <div class="fade-in">
+                <img src="assets/scienceTech.png" alt="logo scienceTech" />
+              </div>
+            </div>
+          </a>
+          <div id="cardCima">
+            <a href="https://indikey-eight.vercel.app/" target="_blank">
+              <div class="fade-in">
+                <img src="assets/indikey.png" alt="logo scienceTech" />
+              </div>
+            </a>
+          </div>
+           <div class="cardBaixo">
+              <div class="fade-in">
+                <img src="assets/voidTech.png" alt="logo scienceTech" />
+              </div>
+            </div>
+        </article>
+      </section>
+      <a name="Sobre"></a>
+      <section id="sobre" class="fade-in">
+        <h2>Sobre Mim</h2>
+        <div>
+          <img src="assets/timeLine.png" alt="linha do tempo tecnologia eu" />
+        </div>
+        <p>
+          Olá, meu nome é Gustavo Gomes da Silva, tenho 19 anos e atualmente,
+          estou estudando Análise e desenvolvimento de sistemas, pela SPTECH e
+          estou no último semstre de desenvolvimento de sistemas pela Etec de
+          Itaquera. Desde pequeno tenho interesse por tecnologia, e em 2021
+          comecei a estudar programação por conta própria, vendo videoaulas e
+          lendo sobre, ja em 2022 entrei para a Etec de itaquera para estudar
+          desenvolvimento de sistemas, no mesmo ano, entrei para o instituto
+          PROA, que tem parceria com o Senac, e me formei em programação web
+          java, e como já disse, atualemente continuo estudando, estou no último
+          semestre da Etec, e no primeiro da SPTECH.
+        </p>
+      </section>
+      <a name="Contatos"></a>
+      <footer>
+        <div>
+          <a href="#Home"><p>Home</p></a>
+        </div>
+        <article>
+          <h3>Contatos</h3>
+          <div>
+            <a href="https://github.com/GustavoGomesDaSilva" target="_blank"
+              ><img src="assets/github.png" alt=""
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/gustavo-gomes-da-silva/"
+              target="_blank"
+              ><img src="assets/linkedin.png" alt=""
+            /></a>
+            <a href="https://www.instagram.com/ggustavo_goomes/" target="_blank"
+              ><img src="assets/instagram.png" alt=""
+            /></a>
+          </div>
+        </article>
+      </footer>
+    </main>
+  </body>
+</html>
+<script>
+  // Selecione todos os elementos que possuem a classe "fade-in"
+  const fadeIns = document.querySelectorAll(".fade-in");
+
+  // Função que verifica se um elemento está visível na janela do navegador
+  function isElementVisible(el) {
+    const rect = el.getBoundingClientRect();
+    const windowHeight =
+      window.innerHeight || document.documentElement.clientHeight;
+    return rect.top <= windowHeight;
+  }
+
+  // Função que verifica se um elemento está visível e adiciona a classe "visible" se estiver
+  function checkFadeIns() {
+    fadeIns.forEach((fadeIn) => {
+      if (isElementVisible(fadeIn)) {
+        fadeIn.classList.add("visible");
+      }
+    });
+  }
+
+  // Verifique se os elementos estão visíveis ao carregar a página e sempre que a página for rolada
+  document.addEventListener("DOMContentLoaded", checkFadeIns);
+  document.addEventListener("scroll", checkFadeIns);
+</script>
