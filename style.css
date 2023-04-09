@@ -312,6 +312,7 @@ footer article div img{
     opacity: 0;
     transition: opacity 1.5s ease-out;
 }
+
 .fade-in.visible {
     opacity: 1;
 }
